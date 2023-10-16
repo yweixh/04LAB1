@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp4.MainPage">
+
+    <ScrollView>
+        <Grid Padding="20"
+                RowSpacing="10"
+                RowDefinitions="Auto, Auto, *">
+            <HorizontalStackLayout Spacing="10"
+                                   HorizontalOptions="Center"
+                               Grid.Row="0">
+                <Label Text="Vertical"
+                   VerticalOptions="Center"/>
+
+                <Button Text="Start"
+                    Clicked="OnVerticalStart"/>
+
+                <Button Text="Center"
+                    Clicked="OnVerticalCenter"/>
+
+                <Button Text="End"
+                    Clicked="OnVerticalEnd"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10"
+                                   HorizontalOptions="Center"
+                                   Grid.Row="1">
+               <Label Text="Horizontal"
+                            VerticalOptions="Center"/>
+
+               <Button Text="Start"
+                    Clicked="OnHorizontalStart"/>
+
+               <Button Text="Center"
+                    Clicked="OnHorizontalCenter"/>
+
+                <Button Text="End"
+                    Clicked="OnHorizontalEnd"/>
+             </HorizontalStackLayout>
+
+
+             <Image x:Name="target"
+                    HeightRequest="120"
+                    WidthRequest="120"
+                    Grid.Row="2"
+                    Source="https://www.hoodmwr.com/wp-content/uploads/2022/12/42.-Jiji-768x982.png"/>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
